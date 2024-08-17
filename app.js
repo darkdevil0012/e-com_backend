@@ -9,9 +9,7 @@ const uploadRouter = require("./routes/upload");
 
 const app = express();
 
-app.use(cors(cors({
-		origin: "http:localhost:5173",
-	}));
+app.use(cors(cors());
 
 require("dotenv").config();
 
